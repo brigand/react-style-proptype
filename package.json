@@ -1,0 +1,30 @@
+{
+  "name": "react-style-proptype",
+  "version": "1.0.0",
+  "description": "validates style objects by ensuring they only have valid keys",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/__test__/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brigand/react-style-proptype.git"
+  },
+  "keywords": [
+    "react",
+    "proptype",
+    "validation",
+    "devtool",
+    "style",
+    "css"
+  ],
+  "author": "Frankie Bagnardi <f.bagnardi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brigand/react-style-proptype/issues"
+  },
+  "homepage": "https://github.com/brigand/react-style-proptype#readme",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
