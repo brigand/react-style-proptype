@@ -18,7 +18,7 @@ module.exports = function(props, propName, componentName) {
 };
 
 module.exports.isRequired = function(props, propName, componentName) {
-  if (!props[propName) {
+  if (!props[propName]) {
     throw new Error('Prop ' + propName + ' passed to ' + componentName + ' is required');
   }
   return module.exports(props, propName, componentName);
