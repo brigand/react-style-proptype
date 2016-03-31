@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/brigand/react-style-proptype#readme",
   "devDependencies": {
+    "cheerio": "^0.20.0",
+    "superagent": "^1.8.3",
     "tape": "^4.5.1"
   }
 }
