@@ -12,7 +12,7 @@ superagent.get(url)
     var camel = names.map((x) => x.split('-').map((a, i) => i === 0 ? a : a[0].toUpperCase() + a.slice(1)).join(''));
     var prefixed = camel.map((name) => {
       var upper = name[0].toUpperCase() + name.slice(1);
-      return [upper, 'Moz' + upper, 'WebKit' + upper, 'MS' + upper, 'O' + upper];
+      return [name, 'Moz' + upper, 'WebKit' + upper, 'MS' + upper, 'O' + upper];
     }).reduce((xs, x) => xs.concat(x), []);
     console.log('module.exports = ' + JSON.stringify(prefixed, null, 2));
   });
