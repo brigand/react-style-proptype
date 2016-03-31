@@ -2,7 +2,7 @@ Validates style objects by ensuring the keys are valid css property names (in ca
 
 
 ```js
-var stylePropType = require('react-stype-proptype');
+var stylePropType = require('react-style-proptype');
 
 var Comp = React.createClass({
   propTypes: {
