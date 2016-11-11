@@ -2,11 +2,11 @@ var properties = require('./css-properties.js');
 var React = require('react');
 
 var originalConsoleError = console.error;
-console.error = (...args) => {
-  if (typeof args[0] === 'string' && /You are manually calling a React\.PropTypes/.test(args[0])) {
+console.error = () => {
+  if (typeof arguments[0] === 'string' && /You are manually calling a React\.PropTypes/.test(arguments[0])) {
     return;
   }
-  originalConsoleError.apply(console, args);
+  originalConsoleError.apply(console, arguments);
 };
 
 module.exports = function(props, propName, componentName) {
