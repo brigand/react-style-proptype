@@ -1,6 +1,14 @@
 var properties = require('./css-properties.js');
 var React = require('react');
 
+var originalConsoleError = console.error;
+console.error = (...args) => {
+  if (typeof args[0] === 'string' && /You are manually calling a React\.PropTypes/.test(args[0])) {
+    return;
+  }
+  originalConsoleError.apply(console, args);
+};
+
 module.exports = function(props, propName, componentName) {
   var styles = props[propName];
   if (!styles) {
