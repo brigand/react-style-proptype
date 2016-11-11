@@ -1,9 +1,13 @@
 var properties = require('./css-properties.js');
+var React = require('react');
 
 module.exports = function(props, propName, componentName) {
   var styles = props[propName];
   if (!styles) {
     return;
+  }
+  if (typeof styles !== 'object') {
+    throw new Error('Prop ' + propName + ' passed to ' + componentName + ' isn\'t an object');
   }
 
   var failures = [];
@@ -23,4 +27,9 @@ module.exports.isRequired = function(props, propName, componentName) {
   }
   return module.exports(props, propName, componentName);
 };
+
+module.exports.supportingArrays = React.PropTypes.oneOfType([
+  React.PropTypes.arrayOf(module.exports),
+  module.exports
+]);
 

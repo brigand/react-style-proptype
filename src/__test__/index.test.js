@@ -28,3 +28,13 @@ test('react-style-proptype', (t) => {
   t.end();
 })
 
+test('supportingArrays', (t) => {
+  stylePropType.supportingArrays({}, 'myStyle', 'A');
+  stylePropType.supportingArrays({myStyle: [{}]}, 'myStyle', 'B');
+  stylePropType.supportingArrays({myStyle: {}}, 'myStyle', 'C');
+  t.throws(() => {
+    stylePropType.supportingArrays({myStyle: 5}, 'myStyle', 'D');
+  });
+  t.end();
+});
+
