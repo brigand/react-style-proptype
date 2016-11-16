@@ -6,9 +6,6 @@ module.exports = function(props, propName, componentName) {
   if (!styles) {
     return;
   }
-  if (typeof styles !== 'object') {
-    throw new Error('Prop ' + propName + ' passed to ' + componentName + ' isn\'t an object');
-  }
 
   var failures = [];
   Object.keys(styles).forEach(function(styleKey){
