@@ -1437,7 +1437,7 @@ module.exports = [
   "transform",
   "MozTransform",
   "WebkitTransform",
-  "MSTransform",
+  "msTransform",
   "OTransform",
   "transformBox",
   "MozTransformBox",

@@ -13,7 +13,11 @@ superagent.get(url)
     camel.push('fontSize', 'flex', 'fr');
     var prefixed = camel.map((name) => {
       var upper = name[0].toUpperCase() + name.slice(1);
-      return [name, 'Moz' + upper, 'Webkit' + upper, 'MS' + upper, 'O' + upper];
+      var items = [name, 'Moz' + upper, 'Webkit' + upper, 'MS' + upper, 'O' + upper];
+      if (name === 'transform') {
+        items[3] = 'msTransform';
+      }
+      return items;
     }).reduce((xs, x) => xs.concat(x), []);
     console.log('module.exports = ' + JSON.stringify(prefixed, null, 2));
   });
