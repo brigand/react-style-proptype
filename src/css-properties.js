@@ -1,3 +1,4 @@
+// GENERATED DO NOT EDIT
 module.exports = [
   "alignContent",
   "MozAlignContent",
@@ -994,21 +995,11 @@ module.exports = [
   "WebkitMaskType",
   "MSMaskType",
   "OMaskType",
-  "maxBlockSize",
-  "MozMaxBlockSize",
-  "WebkitMaxBlockSize",
-  "MSMaxBlockSize",
-  "OMaxBlockSize",
   "maxHeight",
   "MozMaxHeight",
   "WebkitMaxHeight",
   "MSMaxHeight",
   "OMaxHeight",
-  "maxInlineSize",
-  "MozMaxInlineSize",
-  "WebkitMaxInlineSize",
-  "MSMaxInlineSize",
-  "OMaxInlineSize",
   "maxWidth",
   "MozMaxWidth",
   "WebkitMaxWidth",
@@ -1583,5 +1574,10 @@ module.exports = [
   "MozFr",
   "WebkitFr",
   "MSFr",
-  "OFr"
+  "OFr",
+  "overflowScrolling",
+  "MozOverflowScrolling",
+  "WebkitOverflowScrolling",
+  "MSOverflowScrolling",
+  "OOverflowScrolling"
 ]
