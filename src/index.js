@@ -1,5 +1,5 @@
 var properties = require('./css-properties.js');
-var React = require('react');
+var PropTypes = require('prop-types');
 
 module.exports = function(props, propName, componentName) {
   var styles = props[propName];
@@ -25,8 +25,7 @@ module.exports.isRequired = function(props, propName, componentName) {
   return module.exports(props, propName, componentName);
 };
 
-module.exports.supportingArrays = React.PropTypes.oneOfType([
-  React.PropTypes.arrayOf(module.exports),
+module.exports.supportingArrays = PropTypes.oneOfType([
+  PropTypes.arrayOf(module.exports),
   module.exports
 ]);
-
