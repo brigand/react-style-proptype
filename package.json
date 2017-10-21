@@ -1,6 +1,6 @@
 {
   "name": "react-style-proptype",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "validates style objects by ensuring they only have valid keys",
   "main": "src/index.js",
   "scripts": {
