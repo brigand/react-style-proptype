@@ -14,6 +14,17 @@ var Comp = React.createClass({
 
 You can use stylePropType.isRequired similar to the built in proptypes.
 
+## Flow
+
+We also expose a flow type definition. It doesn't use an 'exact' type definition due to a bug in flow, so it'll allow invalid properties. The main purpose of this type is to improve the editor experience for custom components that accept a style prop.
+
+```jsx
+import { type Style } from 'react-style-proptype/src/Style.flow.js';
+
+type Props = {
+  style: Style,
+};
+```
 
 ## Arrays
 
