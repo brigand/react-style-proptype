@@ -1579,5 +1579,10 @@ module.exports = [
   "MozOverflowScrolling",
   "WebkitOverflowScrolling",
   "MSOverflowScrolling",
-  "OOverflowScrolling"
+  "OOverflowScrolling",
+  "userSelect",
+  "MozUserSelect",
+  "WebkitUserSelect",
+  "MSUserSelect",
+  "OUserSelect"
 ]
