@@ -115,6 +115,7 @@ export type Style = {
   emptyCells?: ?string | ?number,
   ex?: ?string | ?number,
   filter?: ?string | ?number,
+  flex?: ?string | ?number,
   flexBasis?: ?string | ?number,
   flexDirection?: ?string | ?number,
   flexFlow?: ?string | ?number,
@@ -315,6 +316,6 @@ export type Style = {
   wordWrap?: ?string | ?number,
   writingMode?: ?string | ?number,
   zIndex?: ?string | ?number,
-  flex?: ?string | ?number,
   overflowScrolling?: ?string | ?number,
+  userSelect?: ?string | ?number,
 }

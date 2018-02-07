@@ -112,6 +112,7 @@
   "emptyCells",
   "ex",
   "filter",
+  "flex",
   "flexBasis",
   "flexDirection",
   "flexFlow",
@@ -312,6 +313,6 @@
   "wordWrap",
   "writingMode",
   "zIndex",
-  "flex",
-  "overflowScrolling"
+  "overflowScrolling",
+  "userSelect"
 ]

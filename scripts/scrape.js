@@ -11,7 +11,7 @@ superagent.get(url)
       .map((x) => x.children[0].children[0].data)
       .filter((x) => /^[a-z-]+$/.test(x))
     var camel = names.map((x) => x.split('-').map((a, i) => i === 0 ? a : a[0].toUpperCase() + a.slice(1)).join(''));
-    camel.push('fontSize', 'flex', 'fr', 'overflowScrolling');
+    camel.push('fontSize', 'flex', 'fr', 'overflowScrolling', 'userSelect');
 
     var uniq = [];
     camel.forEach((x) => {
